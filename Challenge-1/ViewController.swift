@@ -11,6 +11,10 @@ import UIKit
 class ViewController: UIViewController {
 
     
+
+    @IBOutlet var messageLabel: UILabel!
+    @IBOutlet var UIText_Name: UITextField!
+    @IBOutlet var UIText_Email: UITextField!
     
     
     override func viewDidLoad() {
@@ -23,6 +27,12 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func sendButtonPressed(sender: UIButton) {
+        messageLabel.hidden = false
+        messageLabel.text = UIText_Name.text
+        UIText_Name.text = ""
+        UIText_Name.resignFirstResponder()
+    }
 
 }
 
