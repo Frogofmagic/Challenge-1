@@ -46,16 +46,16 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="designer.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="XRB-Z8-CNB">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="265" y="82" width="106" height="128"/>
+                                    <rect key="frame" x="273" y="173" width="106" height="128"/>
                                 </variation>
                             </imageView>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h0I-k7-Vfy">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h0I-k7-Vfy">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="204" width="195" height="21"/>
+                                    <rect key="frame" x="16" y="82" width="363" height="83"/>
                                 </variation>
                             </label>
                         </subviews>
@@ -83,6 +83,7 @@
                     <connections>
                         <outlet property="UIText_Email" destination="5ad-WL-NYk" id="Bez-Yr-tfg"/>
                         <outlet property="UIText_Name" destination="T9Z-7K-G3m" id="LEt-eG-w5q"/>
+                        <outlet property="doneButton" destination="RHp-kp-Hfc" id="AsS-Zn-2EU"/>
                         <outlet property="messageLabel" destination="h0I-k7-Vfy" id="8Cq-8I-0Ba"/>
                     </connections>
                 </viewController>

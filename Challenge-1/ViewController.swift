@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet var messageLabel: UILabel!
     @IBOutlet var UIText_Name: UITextField!
     @IBOutlet var UIText_Email: UITextField!
+    @IBOutlet var doneButton: UIButton!
     
     
     override func viewDidLoad() {
@@ -30,8 +31,12 @@ class ViewController: UIViewController {
     @IBAction func sendButtonPressed(sender: UIButton) {
         messageLabel.hidden = false
         messageLabel.text = UIText_Name.text
+        messageLabel.textColor = UIColor.blueColor()
+        
         UIText_Name.text = ""
         UIText_Name.resignFirstResponder()
+        
+        doneButton.setTitle("OK", forState: UIControlState.Normal)
     }
 
 }
