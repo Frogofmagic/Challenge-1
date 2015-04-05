@@ -58,6 +58,15 @@
                                     <rect key="frame" x="16" y="82" width="363" height="83"/>
                                 </variation>
                             </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Iw-by-fIL">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="173" width="249" height="21"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -67,6 +76,7 @@
                                 <exclude reference="5ad-WL-NYk"/>
                                 <exclude reference="XRB-Z8-CNB"/>
                                 <exclude reference="h0I-k7-Vfy"/>
+                                <exclude reference="1Iw-by-fIL"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -76,6 +86,7 @@
                                 <include reference="5ad-WL-NYk"/>
                                 <include reference="XRB-Z8-CNB"/>
                                 <include reference="h0I-k7-Vfy"/>
+                                <include reference="1Iw-by-fIL"/>
                             </mask>
                         </variation>
                     </view>
@@ -84,6 +95,7 @@
                         <outlet property="UIText_Email" destination="5ad-WL-NYk" id="Bez-Yr-tfg"/>
                         <outlet property="UIText_Name" destination="T9Z-7K-G3m" id="LEt-eG-w5q"/>
                         <outlet property="doneButton" destination="RHp-kp-Hfc" id="AsS-Zn-2EU"/>
+                        <outlet property="emailLabel" destination="1Iw-by-fIL" id="C0v-P8-DAt"/>
                         <outlet property="messageLabel" destination="h0I-k7-Vfy" id="8Cq-8I-0Ba"/>
                     </connections>
                 </viewController>

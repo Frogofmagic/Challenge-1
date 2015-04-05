@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     @IBOutlet var UIText_Name: UITextField!
     @IBOutlet var UIText_Email: UITextField!
     @IBOutlet var doneButton: UIButton!
+    @IBOutlet var emailLabel: UILabel!
     
     
     override func viewDidLoad() {
@@ -32,6 +33,13 @@ class ViewController: UIViewController {
         messageLabel.hidden = false
         messageLabel.text = UIText_Name.text
         messageLabel.textColor = UIColor.blueColor()
+        
+        emailLabel.hidden = false
+        emailLabel.text = UIText_Email.text
+        emailLabel.textColor = UIColor.yellowColor()
+        
+        UIText_Email.text = ""
+        UIText_Email.resignFirstResponder()
         
         UIText_Name.text = ""
         UIText_Name.resignFirstResponder()
